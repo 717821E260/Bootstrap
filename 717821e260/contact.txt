@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Contact Form</title>
+  <style>
+    body{
+       
+background-image: url('file:///C:/Users/admin/Pictures/pexels-photo-1229861.webp');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+     
+}
+    
+    </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+         
+
+<body>
+  
+  <div class="container">
+    
+   
+    <h1 style = "color:white">
+      
+    </h1>
+    
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+      Contact  Us
+    </button>
+  </div>
+
+  
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name*</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="number" class="form-label">Age</label>
+              <input type="number" class="form-control" id="age" placeholder="Enter your age" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address*</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="text" class="form-label">City*</label>
+              <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
